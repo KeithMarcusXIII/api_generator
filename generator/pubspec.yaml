@@ -1,0 +1,30 @@
+name: api_generator
+description: A new Flutter package project.
+version: 0.0.3
+homepage: null
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  api_annotations: null
+  built_collection: ^5.1.0
+  code_builder: ^4.1.0
+  dio: ^4.0.0
+  flutter:
+    sdk: flutter
+  source_gen: ^1.0.3
+  tuple: ^2.0.0
+  logger: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  source_gen_test: ^1.0.1
+
+dependency_overrides:
+  api_annotations:
+    path: ../annotations
+
+flutter: null
