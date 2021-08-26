@@ -18,9 +18,11 @@ packages:
   api_annotations:
     dependency: "direct main"
     description:
-      path: "../annotations"
-      relative: true
-    source: path
+      path: annotations
+      ref: HEAD
+      resolved-ref: "588c622c368b0a73ac3e6e1041955513fa7e6a9b"
+      url: "https://github.com/KeithMarcusXIII/api_generator.git"
+    source: git
     version: "0.0.1"
   args:
     dependency: transitive
