@@ -513,7 +513,7 @@ class ApiGenerator extends GeneratorForAnnotation<api_annotations.RestApi> {
     if (fields.isNotEmpty) {
       block.add(literalMap(fields).assignFinal(_localDataVar).statement);
       if (anyNullable) {
-        block.add(Code('$_dataVar.removeWhere((k, v) => v == null);'));
+        block.add(Code('$_localDataVar.removeWhere((k, v) => v == null);'));
       }
       return block;
     }
