@@ -1196,9 +1196,9 @@ class ApiGenerator extends GeneratorForAnnotation<api_annotations.RestApi> {
     } else {
       if (type.getDisplayString(withNullability: false) == 'dynamic' ||
           _isBasicType(type)) {
-        return '(json) => json as ${type.getDisplayString(withNullability: false)},';
+        return '(json) => json as ${type.getDisplayString(withNullability: false)}';
       } else {
-        return '(json) => ${type.getDisplayString(withNullability: false)}.fromJson(json as Map<String, dynamic>),';
+        return '(json) => ${type.getDisplayString(withNullability: false)}.fromJson(json as Map<String, dynamic>)';
       }
     }
   }
